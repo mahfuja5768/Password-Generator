@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.whole_container{
+    background-image: url('./images/polygon-scatter-haikei.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    gap: 15px;
+    border: 2px solid #fff;
+    max-width: 450px;
+    padding: 40px 30px;
+    background-color: #043147;
+}
+
+input[type="range"]{
+    accent-color: #55c4f7;
+}
+
+.container h1{
+    font-size: 1.4rem;
+    margin-block: 8px;
+}
+.inputBox{
+    position: relative;
+}
+
+.inputBox span{
+    position: absolute;
+    top: 16px;
+    right: 6px;
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+.passBox{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-block: 8px;
+    text-overflow: ellipsis;
+}
+
+.row{
+    display: flex;
+    margin-block: 8px;
+}
+
+.row p, .row label{
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"]{
+    accent-color: #55c4f7;
+    width: 20px;
+    height: 20px;
+}
+
+.genBtn{
+    border: none;
+    outline: none;
+    background-color: #196f97;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 18px;
+    margin-block: 8px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  .4s ease-in-out;
+}
+
+.genBtn:hover{
+    background-color: #0c8fcc;
+}
