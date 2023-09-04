@@ -28,8 +28,8 @@ function generatePassword() {
   let genPassword = "";
   let allChars = "";
 
-  allChars += upperChars.checked ? upperChars : "";
-  allChars += lowerChars.checked ? lowerChars : "";
+  allChars += uppercase.checked ? upperChars : "";
+  allChars += lowercase.checked ? lowerChars : "";
   allChars += numbers.checked ? allNumbers : "";
   allChars += symbols.checked ? allSymbols : "";
 
